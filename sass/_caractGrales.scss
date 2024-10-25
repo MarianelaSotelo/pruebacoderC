@@ -1,0 +1,402 @@
+//Header
+.navbarColor {
+    background-color: $colorSecundarioB;
+}
+
+@media (max-width: 600px) {
+    .navbarColor {
+        padding: 10px;
+    }
+}
+
+.navColor:hover {
+    background-color: $colorPrimarioA;
+    border-radius: 5px;
+    color: $colorHoover;
+    font-weight: bold;
+}
+
+.btn-outline-success {
+    background-color: $colorSecundarioB;
+}
+
+.btn-outline-success:hover {
+    background-color: $colorPrimarioA;
+}
+
+
+.divCentral {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+
+}
+
+@media (max-width: 600px) {
+    .divCentral {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+}
+
+.intro {
+    text-align: center;
+    position: absolute;
+    color: #ecfffd;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .intro {
+        font-size: medium;
+        padding: 10px;
+        bottom: 5px;
+    }
+}
+
+
+.imgCentral {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .imgCentral {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
+//main 
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $colorFondoA;
+
+}
+
+main {
+    flex-basis: 75%;
+}
+
+@media (max-width:800px) {
+    main {
+        background-position: center;
+        text-align: center;
+        flex-basis: unset;
+    }
+}
+
+.subtitulos {
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.imagenes {
+    display: block;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+
+iframe {
+    width: 600px;
+    height: 60vh;
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
+
+@media (max-width: 600px) {
+    iframe {
+        width: 100%;
+        height: 50vh;
+        padding: 20px;
+    }
+}
+
+// aside
+aside {
+    flex-basis: 25%;
+    background-color: #079636;
+    background-image: url(../img/51611da0a9fbd4c76a2a4d1759dbacda.jpg);
+    background-repeat: repeat;
+}
+
+@media (max-width:800px) {
+    aside {
+        background-position: center;
+        flex-direction: column;
+        flex-basis: unset;
+    }
+}
+
+
+aside h5 {
+    text-align: center;
+    color: #D9FDC8;
+    margin: 10px;
+}
+
+aside p {
+    text-align: center;
+    font-style: italic;
+    color: #D9FDC8;
+    margin: 10px;
+}
+
+.asideimg img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    transition: 0.4s all ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .asideimg img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.asideimg:hover img {
+    transform: scale(1.25);
+}
+
+@media (max-width:800px) {
+    .asideimg img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+article {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* footer*/
+footer {
+    background-color: $colorSecundarioB;
+    color: $colorFuente;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.footer {
+    margin: 5px;
+}
+
+//pagina compost
+.mainCompost {
+    background-color: $colorFondoA;
+}
+
+.presentacion {
+    text-align: center;
+    font-style: italic;
+    padding: 15px;
+}
+
+.parrafo {
+    margin: 0%;
+
+}
+
+.imagenesCompost {
+    display: block;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+}
+
+.subtitulosCompost {
+    font-size: 1.7rem;
+    padding: 5%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+//pagina quienes somos
+
+.container {
+    background-color: $colorFondoA;
+}
+
+//formulario
+
+legend {
+    color: $colorHoover;
+}
+
+form.formulario {
+    background-color: $colorPrimarioA;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.grupo {
+    margin-bottom: 15px;
+}
+
+.grupo label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.grupo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#ultimacolumna input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: $colorPrimarioB;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#ultimacolumna input[type="submit"]:hover {
+    background-color: $colorSecundarioB;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    form.formulario {
+        padding: 15px;
+        width: 90%;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    .grupo input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #ultimacolumna input[type="submit"] {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    form.formulario {
+        padding: 10px;
+        width: 95%;
+    }
+
+    legend {
+        font-size: 18px;
+    }
+
+    .grupo input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #ultimacolumna input[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+// tienda
+
+.tienda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    width: 10rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: $colorHoover;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: $colorPrimarioA;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: $colorPrimarioB;
+    font-weight: bold;
+}
+.text-center {
+    padding: 25px;
+}
